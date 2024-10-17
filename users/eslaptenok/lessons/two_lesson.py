@@ -23,7 +23,8 @@
 
 def func_sum(x: int | float, y: int) -> int:
     """Суммирует X и Y"""
-
-    return x + y
+    
+    sum = x + y
+    return sum
 
 print(func_sum(5.2, 2))

@@ -4,14 +4,13 @@ def bubble_sort(sort_list: list[int | float]) -> list[int | float]:
     
     lenght_list: int = len(sort_list)
     for i in range(0, lenght_list - 1):
+        indicator: bool = False
         for i in range(0, lenght_list - 1):
             if sort_list[i] > sort_list[i + 1]:
                 elem: int | float = sort_list[i]
                 sort_list[i] = sort_list[i + 1]
                 sort_list[i + 1] = elem
-                indicator: bool = True
-            else:
-                indicator = False
+                indicator = True     
         lenght_list -= 1
         if indicator == False:
             break
@@ -19,6 +18,7 @@ def bubble_sort(sort_list: list[int | float]) -> list[int | float]:
 
 print(bubble_sort([1, 5, -8, 1.3, 0]))
 print(bubble_sort([55, 0, 1, 4, 5]))
+print(bubble_sort([123, 122, 121, 9, 6, 500, 600]))
 
 # написать функцию которая принимает строку(любой текст и любой длины) 
 # и возвращает словарь, ключами которого являются символы данно текста, значением их количества в тексте

@@ -1,20 +1,18 @@
 # написать функцию, которая выполняет пузырьковую сортировку у списка
-def bubble_sort(sort_list: list[int | float]) -> list[int | float]:
+def bubble_sort(sortable_list: list[int | float]) -> list[int | float]:
     """Сортирует список с помощью пузырьковой сортировки"""
     
-    lenght_list: int = len(sort_list)
+    lenght_list: int = len(sortable_list)
     for i in range(0, lenght_list - 1):
         indicator: bool = False
         for i in range(0, lenght_list - 1):
-            if sort_list[i] > sort_list[i + 1]:
-                elem: int | float = sort_list[i]
-                sort_list[i] = sort_list[i + 1]
-                sort_list[i + 1] = elem
+            if sortable_list[i] > sortable_list[i + 1]:
+                sortable_list[i], sortable_list[i + 1] = sortable_list[i + 1], sortable_list[i]
                 indicator = True     
         lenght_list -= 1
         if indicator == False:
             break
-    return sort_list
+    return sortable_list
 
 print(bubble_sort([1, 5, -8, 1.3, 0]))
 print(bubble_sort([55, 0, 1, 4, 5]))

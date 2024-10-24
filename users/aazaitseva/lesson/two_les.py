@@ -23,6 +23,7 @@ no_max_value = 100
 step = 1
 print(range(min_value, no_max_value, step))
 
+#Проходится по всем эл. коллекции и помещает каждое ее значение в переменную
 for value in var_list:
     print(value)
 

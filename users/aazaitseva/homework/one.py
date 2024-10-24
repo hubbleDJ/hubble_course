@@ -2,8 +2,6 @@
 # Написать программу, которая принимает 2 числа(через input) и выводит их сумму
 # Найти как называть переменные
 
-text = 'Unbelievable'
-dict = {}
-for letter in text:
-	dict[letter] = text.count(letter)
-print(dict)
+a = int(input("Введи первое число для сложения: "))
+b = int(input("Введи второе число для сложения: "))
+print(f"{a} + {b} = {a+b}")

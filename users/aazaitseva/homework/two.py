@@ -27,12 +27,14 @@ print(dct)
 #если эл. есть в словаре
     #увеличиваем его количество на 1 
 
-text = 'Unbelievable' 
-i = 0
+text = "unbelievable"
+res = {}    
 for letter in text:
-    if letter == 0 :
-        i += 1
-print(i)
+    if letter in res:
+       res[letter] += 1
+    else:
+       res[letter] = 1          
+print(res)
 
 #написать цикл, кот-й по очереди выводит все элементы списка
 a = [1, 3, 5 ]

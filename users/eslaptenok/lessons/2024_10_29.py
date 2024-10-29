@@ -4,6 +4,7 @@
 # Наследование
 
 from accessify import private, protected
+import json
 
 class Car:
     """
@@ -97,3 +98,41 @@ primer_dict = {str(i): i for i in range(100)}
 
 print(chet_list)
 print(primer_dict)
+
+def my_func(lol: str, *args, **kwargs):
+    print(lol, args, kwargs)
+
+print(my_func('123', 132, '', o=12, iu='23'))
+print(my_func(lol='12'))
+
+with open('/Users/mvstrometskiy/home_programs/hubble_course/users/eslaptenok/lessons/2024_10_29.json', 'r') as f:
+    print(json.load(f))
+
+
+import asyncio
+import logging
+from aiogram import Bot, Dispatcher, types
+from aiogram.filters.command import Command
+
+# Включаем логирование, чтобы не пропустить важные сообщения
+logging.basicConfig(level=logging.INFO)
+
+# Объект бота
+bot = Bot(token="8068611166:AAGBGSSa7Pyi4rMnGOLq6ZJISf-waYeu5QI")
+
+# Диспетчер
+dp = Dispatcher()
+
+@dp.message()
+async def cmd_start(message: types.Message):
+    await message.answer(f"Hello, {message.chat.username}!")
+
+# Запуск процесса поллинга новых апдейтов
+async def main():
+    await dp.start_polling(bot)
+
+# if __name__ == "__main__":
+#     asyncio.run(main())
+    
+    
+# import t

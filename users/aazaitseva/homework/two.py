@@ -9,24 +9,6 @@
 #   '!': 1
 #}
 
-text = 'Unbelievable'
-dct = {}
-for letter in text:
-	dct[letter] = text.count(letter)
-print(dct)
-
-#берем i элемент 
-#если буквы нет в словаре
-    #считаем кол-во этой буквы в строке
-    #записываем значение
-
-
-#берем i элемент
-#если эл. нет в словаре
-    #записываем равным одному
-#если эл. есть в словаре
-    #увеличиваем его количество на 1 
-
 text = "unbelievable"
 res = {}    
 for letter in text:
@@ -34,9 +16,4 @@ for letter in text:
        res[letter] += 1
     else:
        res[letter] = 1          
-print(res)
-
-#написать цикл, кот-й по очереди выводит все элементы списка
-a = [1, 3, 5 ]
-for numb in a :
- print(numb)
+print(res)  

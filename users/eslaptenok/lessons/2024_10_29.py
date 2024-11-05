@@ -125,14 +125,31 @@ dp = Dispatcher()
 
 @dp.message()
 async def cmd_start(message: types.Message):
-    await message.answer(f"Hello, {message.chat.username}!")
+    
+    markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
+    markup.add(types.KeyboardButton('LOL'))
+    await message.answer(f"Hello, {message.chat.username}!", reply_markup=markup)
 
 # Запуск процесса поллинга новых апдейтов
 async def main():
     await dp.start_polling(bot)
 
 # if __name__ == "__main__":
-#     asyncio.run(main())
+    # asyncio.run(main())
     
     
-# import t
+import sqlite3
+with sqlite3.connect('my_database.db') as connection:
+    cursor = connection.cursor()
+    print(cursor.execute('''
+        CREATE TABLE if not exists texts (
+            id Int,
+            scenario_id Int,
+            text String
+        )
+    '''))
+    
+    print(cursor.execute('''
+        insert into texts (id, scenario_id, text)
+        values(0, 0, 'Привет! Это тестовое сообщение')
+    '''))

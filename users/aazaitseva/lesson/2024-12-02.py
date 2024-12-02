@@ -49,3 +49,52 @@ my_dict = {
 # обращение идентично
 print(my_dict['lol'])
 print(my_list[0])
+
+
+my_string = 'Строка'.lower()
+
+# Переменные в классе - свойства класса/объекта класса
+# Функции в классе - методы класса/объекта класса
+
+class People:
+    """
+    Пример создания класса people
+    """
+    
+    def __init__(self, name: str, age: int, gender: str) -> None:
+        self.name = name
+        self.age = age
+        self.gender = gender
+    
+    def hello_people(self):
+        print(f'''Привет, {self.name}!''')
+
+
+class Male(People):
+    """
+        Наследование класса People
+    """
+    
+    def __init__(self, name, age) -> None:
+        super().__init__(
+            name=name,
+            age=age,
+            gender='Male'
+        )
+        
+
+people_maks = People(
+    name='Maks',
+    age=27,
+    gender='Male'
+)
+
+people_maks.hello_people()
+
+
+maks = Male(
+    name='Maks',
+    age=27
+)
+
+maks.hello_people()

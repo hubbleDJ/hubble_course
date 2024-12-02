@@ -5,7 +5,7 @@ def new_sum(x: int, y: int) -> int:
 
 print(new_sum(1, 5))
 
-def count_letter(text: str) -> dict[str,int]:
+def count_letter(text: str) -> dict[str, int]:
     res = {}    
     for letter in text:
         if letter in res:

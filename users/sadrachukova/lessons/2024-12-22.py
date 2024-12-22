@@ -10,10 +10,22 @@ if __name__ == '__main__':
 # int
 var_int: int = 56
 varInt: int = 52
+print(var_int)
+varTwoInt: int = varInt
+varThreeInt: int = 16/8
+print(var_int **2)
+print(var_int //3)
+print(var_int %3)
+var_int = var_int + 1
+var_int += 1
+print(var_int)
+
 
 # float
 var_float: float = 89.7
 varFloat: float = -89.7
+print(int(var_float))
+print(float("15"))
 
 # bool
 var_bool: bool = True
@@ -22,7 +34,21 @@ varBool: bool = False
 # str
 var_str: str = 'Hello, world!'
 varStr: str = '1'
+print('''"три" кавычки''')
+print("""'три кавычки' другие""")
+print("кавычки")
+print("5" + "a")
 
+x = 45
+y = 50 
+print("x + y =" + str(x + y))
+print("x + y ={}".format(x + y)) 
+print(f"x + y ={x + y}")
+print("text"[0])
+print("text"[-2])
+print("text"[2:])
+print("text"[:3])
+print(len("text"))
 
 x: str = 'lol'
 y: int = 34567
@@ -57,3 +83,7 @@ var_dict: dict[str, str] = {
     'name': 'Maks',
     'male': 'M'
 }
+
+var_none = None
+
+print(type(var_set))

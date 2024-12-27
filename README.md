@@ -1,1 +1,3 @@
-# hubble_course
+# Репозиторий hubble_courses
+
+## Структура проекта

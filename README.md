@@ -47,3 +47,4 @@
     - Нижним регистром
     - В каталоге `/users/username`
     - Пример: `/users/mvstrometskiy`
+

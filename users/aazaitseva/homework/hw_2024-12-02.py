@@ -10,6 +10,8 @@ def maxNumList(numbers: list[int]) -> int:
     """
     '''maxNum = None
     return maxNum'''
+    if not numbers:
+        return None
 
     maxNum = numbers[0]
     for element in numbers:
@@ -30,6 +32,8 @@ def minNumList(numbers: list[int]) -> int:
     
     '''minNum = None
     return minNum'''
+    if not numbers:
+        return None
 
     minNum = numbers[0]
     for element in numbers:
@@ -97,4 +101,3 @@ def getCountNumsMoreNum(numbers: list[int], num: int) -> int:
 result = getCountNumsMoreNum([0, -1, 19999, -80898, 898], 19)
 print(result)
 
-.

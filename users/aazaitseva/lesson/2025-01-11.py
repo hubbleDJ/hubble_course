@@ -21,18 +21,3 @@ with sqlite3.connect('my_db.db') as conn:
     
     
     id_message = cursor.execute('''select user_id from messages limit 1''').fetchall()[0][0]
-
-# with sqlite3.connect('my_database.db') as connection:
-#     cursor = connection.cursor()
-#     print(cursor.execute('''
-#         CREATE TABLE if not exists texts (
-#             id Int,
-#             scenario_id Int,
-#             text String
-#         )
-#     '''))
-    
-#     print(cursor.execute('''
-#         insert into texts (id, scenario_id, text)
-#         values(0, 0, 'Привет! Это тестовое сообщение')
-#     '''))

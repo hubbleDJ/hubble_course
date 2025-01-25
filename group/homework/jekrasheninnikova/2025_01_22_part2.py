@@ -1,0 +1,12 @@
+myDictVar: dict = {}
+print(f'Как тебя зовут?')
+myDictVar['имя'] = input()
+print(f'Какой у тебя пол? Женский/Мужской')
+myDictVar['пол'] = input()
+print(f'Сколько тебе лет?')
+myDictVar['возраст'] = input()
+print(f'Какие у тебя хобби? Введи три наиболее значимых для тебя')
+myDictVar['хобби'] = input(), input(), input()
+print(f'Любимая музыка? Введи два наиболее интересных для тебя жанра/прилагательных')
+myDictVar['любимая музыка'] = input(), input()
+print(f'''Привет, {myDictVar['имя']}, возраст которой {myDictVar['возраст']} лет и пол {myDictVar['пол']}, любящей {myDictVar['хобби'][0]}, {myDictVar['хобби'][1]} и {myDictVar['хобби'][2]}, слушающая {myDictVar['любимая музыка'][0]} и {myDictVar['любимая музыка'][1]}''')

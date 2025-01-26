@@ -1,4 +1,4 @@
-#homework1
+"""Module homework1"""
 
 print("Введите два числа (целых или вещественных) через enter:")
 input1: str = input()
@@ -7,7 +7,7 @@ input2: str = input()
 try:
     x: float = float(input1)
     y: float = float(input2)
-    
+
     print(f'''Сумма: {x} + {y} = {x + y}''')
     print(f'''Разность: {x} - {y} = {x - y}''')
     print(f'''Умножение: {x} * {y} = {x * y}''')

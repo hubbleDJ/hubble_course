@@ -39,7 +39,7 @@ for value in collect:
 # range тоже возвращяет коллекцию
 for i in range(0, len(collect)):
    collect[i]
-   
+  
 # У словаря вместо индексов ключи
 my_dict = {
     'lol': 1,
@@ -61,12 +61,12 @@ class People:
     """
     Пример создания класса people
     """
-    
+   
     def __init__(self, name: str, age: int, gender: str) -> None:
         self.name = name
         self.age = age
         self.gender = gender
-    
+   
     def hello_people(self):
         print(f'''Привет, {self.name}!''')
 
@@ -75,14 +75,14 @@ class Male(People):
     """
         Наследование класса People
     """
-    
+   
     def __init__(self, name, age) -> None:
         super().__init__(
             name=name,
             age=age,
             gender='Male'
         )
-        
+       
 
 people_maks = People(
     name='Maks',
@@ -104,24 +104,24 @@ maks.hello_people()
 # 2024-12-14
 class Car:
     """Класс машины"""
-    
+   
     def __init__(self, marka: str, vladelec: str):
         self.__marka = marka
         self._vladelec = vladelec
-    
+   
     def run(self, speed: float):
         if self.motor():
             print(f'Машина поехала {speed} км в час')
-        
+       
     def getMarka(self) -> str:
         return self.__marka
-    
+   
     def setVladelec(self, new_vladelec: str) -> None:
         self._vladelec = new_vladelec
-        
+       
     def getVladelec(self) -> str:
         return self._vladelec
-    
+   
     @protected
     def motor(self) -> bool:
         return True
@@ -143,20 +143,20 @@ print(car_1.getVladelec())
 # Protected:
     # _name - доступен только внутри класса и в дочерних классах
     # from accessify import protected
-    
+   
 # Полиморфизм
 # Наследование
 # Абстракция
 
 class Mebel:
-    
+   
     def __init__(self):
         pass
-    
+   
     # @private
     def sobrat(self) -> None:
         print('Собран')
-        
+       
 stul = Mebel()
 stul.sobrat()
 
@@ -168,7 +168,7 @@ def getNameForId(id: int) -> str:
 class User:
     def __init__(self):
         pass
-    
+   
     def hello(self, user: int | str | dict) -> None:
         if isinstance(user, str):
             print(f'Hello, {user}')
@@ -184,30 +184,30 @@ class BMW(Car):
     """
         Наследование класса Car
     """
-    
+   
     def __init__(self, vladelec) -> None:
         super().__init__(
             marka='BMW',
             vladelec=vladelec
         )
-    
+   
     def service(self) -> None:
         if self.motor():
             print('Сначала заглуши мотор')
-    
+   
 car_2 = BMW(vladelec='Natya')
 car_2.service()
 
 
 class Sobaka:
     laps = 4
-    
+   
     def __init__(self):
         pass
-    
+   
     def run(cls):
         print(f'Бежим на всех {cls.laps} лапах')
-    
+   
 sob_1 = Sobaka()
 sob_1.run()
 

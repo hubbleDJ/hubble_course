@@ -1,6 +1,6 @@
 if __name__ == '__main__':
     print('Hello, world!')
-    
+   
 
 #
 # Процессор
@@ -40,9 +40,9 @@ print("кавычки")
 print("5" + "a")
 
 x = 45
-y = 50 
+y = 50
 print("x + y =" + str(x + y))
-print("x + y ={}".format(x + y)) 
+print("x + y ={}".format(x + y))
 print(f"x + y ={x + y}")
 print("text"[0])
 print("text"[-2])

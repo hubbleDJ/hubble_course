@@ -9,4 +9,3 @@ print(f'{dig_var1} * {dig_var2} = {dig_var1 * dig_var2}')
 print(f'{dig_var1} / {dig_var2} = {dig_var1 / dig_var2}')
 print(f'{dig_var1} % {dig_var2} = {dig_var1 % dig_var2}')
 print(f'{dig_var1} // {dig_var2} = {dig_var1 // dig_var2}')
-

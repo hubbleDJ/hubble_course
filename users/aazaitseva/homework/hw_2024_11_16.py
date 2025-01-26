@@ -1,5 +1,5 @@
 def factorial(n: int) -> int:
-    """вычисляет факториал числа"""
+    """вычисляет факториал числа."""
 
     if n in [0, 1]:
         return 1
@@ -8,5 +8,6 @@ def factorial(n: int) -> int:
     else:
         return n * factorial(n-1)
 
-n = int(input("Ввод числа:"))
+
+n = int(input('Ввод числа:'))
 print(factorial(n))

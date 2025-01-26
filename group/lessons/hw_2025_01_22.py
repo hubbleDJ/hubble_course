@@ -9,8 +9,8 @@ print(myIntVar + 90)
 print(myIntVar - 90)
 print(myIntVar / 90)
 print(myIntVar ** 2)
-print(myIntVar // 2) # Целая часть
-print(myIntVar % 2) # Остаток от деления
+print(myIntVar // 2)  # Целая часть
+print(myIntVar % 2)  # Остаток от деления
 print(myIntVar == 7)
 print(myIntVar >= 7)
 print(myIntVar <= 7)
@@ -33,12 +33,12 @@ myBoolVar: bool = True
 
 # List - список
 myListVar: list[int] = [1, 2, 3, 4, 890, 0]
-myListVar: list[int|float|list[int]] = [1, 2, 78.8, 3, 4, 890, 0, [1, 3]]
+myListVar: list[int | float | list[int]] = [1, 2, 78.8, 3, 4, 890, 0, [1, 3]]
 myListVar.append(990)
 
 print(myListVar[1])
-print(myListVar[1:5]) # Элементы 1, 2, 3, 4
-print(myListVar[:3]) # Элементы 0, 1, 2
+print(myListVar[1:5])  # Элементы 1, 2, 3, 4
+print(myListVar[:3])  # Элементы 0, 1, 2
 print(len(myListVar))
 
 print(45 in [1, 3, 4, 67])
@@ -50,10 +50,10 @@ myStringVar: str = '''Hello, world!'''
 myStringVar: str = """Hello, world!"""
 
 print(myStringVar[:5])
-print('Hello,' + ' world!') # Конкатинация строк
+print('Hello,' + ' world!')  # Конкатинация строк
 
-x: int|float = 1
-y: int|float = 100
+x: int | float = 1
+y: int | float = 100
 
 print(int('765'))
 

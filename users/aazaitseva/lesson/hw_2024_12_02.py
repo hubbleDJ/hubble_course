@@ -23,8 +23,8 @@ print(my_list)
 collect = [1, 3, 678]
 
 # Более быстрые коллекции
-tuple() # Кортеж(По факту массив) - быстрее, чем список. Нельзя изменять
-set() # Хеш сет - самая быстрая коллекция. Можно изменять. Нельзя обращаться по индексу
+tuple()  # Кортеж(По факту массив) - быстрее, чем список. Нельзя изменять
+set()  # Хеш сет - самая быстрая коллекция. Можно изменять. Нельзя обращаться по индексу
 
 # Сет можно перебирать циклом
 my_set = set()
@@ -38,7 +38,7 @@ for value in collect:
 
 # range тоже возвращяет коллекцию
 for i in range(0, len(collect)):
-   collect[i]
+    collect[i]
 
 # У словаря вместо индексов ключи
 my_dict = {
@@ -57,10 +57,9 @@ my_string = 'Строка'.lower()
 # Переменные в классе - свойства класса/объекта класса
 # Функции в классе - методы класса/объекта класса
 
+
 class People:
-    """
-    Пример создания класса people
-    """
+    """Пример создания класса people."""
 
     def __init__(self, name: str, age: int, gender: str) -> None:
         self.name = name
@@ -72,9 +71,7 @@ class People:
 
 
 class Male(People):
-    """
-        Наследование класса People
-    """
+    """Наследование класса People."""
 
     def __init__(self, name, age) -> None:
         super().__init__(
@@ -103,7 +100,7 @@ maks.hello_people()
 
 # 2024-12-14
 class Car:
-    """Класс машины"""
+    """Класс машины."""
 
     def __init__(self, marka: str, vladelec: str):
         self.__marka = marka
@@ -127,7 +124,6 @@ class Car:
         return True
 
 
-
 car_1 = Car(marka='BMW', vladelec='Maks')
 print(car_1.getMarka())
 print(car_1.getVladelec())
@@ -138,11 +134,11 @@ print(car_1.getVladelec())
 
 # Инкапсуляция
 # Private:
-    # __name - доступен только внутри класса
-    # from accessify import private
+# __name - доступен только внутри класса
+# from accessify import private
 # Protected:
-    # _name - доступен только внутри класса и в дочерних классах
-    # from accessify import protected
+# _name - доступен только внутри класса и в дочерних классах
+# from accessify import protected
 
 # Полиморфизм
 # Наследование
@@ -157,6 +153,7 @@ class Mebel:
     def sobrat(self) -> None:
         print('Собран')
 
+
 stul = Mebel()
 stul.sobrat()
 
@@ -164,6 +161,7 @@ stul.sobrat()
 def getNameForId(id: int) -> str:
     ...
     return 'valera'
+
 
 class User:
     def __init__(self):
@@ -181,9 +179,7 @@ class User:
 
 
 class BMW(Car):
-    """
-        Наследование класса Car
-    """
+    """Наследование класса Car."""
 
     def __init__(self, vladelec) -> None:
         super().__init__(
@@ -194,6 +190,7 @@ class BMW(Car):
     def service(self) -> None:
         if self.motor():
             print('Сначала заглуши мотор')
+
 
 car_2 = BMW(vladelec='Natya')
 car_2.service()
@@ -208,6 +205,6 @@ class Sobaka:
     def run(cls):
         print(f'Бежим на всех {cls.laps} лапах')
 
+
 sob_1 = Sobaka()
 sob_1.run()
-

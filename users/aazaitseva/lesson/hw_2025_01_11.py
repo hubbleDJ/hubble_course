@@ -18,5 +18,3 @@ with sqlite3.connect('my_db.db') as conn:
         insert into messages (id, text, user_id)
         values(0, 'ПРИВЕТ!', 0)
     ''')
-
-

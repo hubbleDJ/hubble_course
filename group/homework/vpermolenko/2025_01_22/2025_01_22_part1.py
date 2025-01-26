@@ -1,6 +1,6 @@
-"""Module homework1"""
+"""Module homework1."""
 
-print("Введите два числа (целых или вещественных) через enter:")
+print('Введите два числа (целых или вещественных) через enter:')
 input1: str = input()
 input2: str = input()
 
@@ -20,4 +20,4 @@ try:
         print(f'''Остаток от деления: {x} % {y} = {x % y}''')
         print(f'''Деление без остатка: {x} // {y} = {x // y}''')
 except ValueError:
-    print("Вы не ввели числа")
+    print('Вы не ввели числа')

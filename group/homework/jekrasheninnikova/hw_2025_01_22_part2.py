@@ -4,7 +4,8 @@ userInfo: dict = {}
 userInfo['name'] = input('Как тебя зовут?\n')
 userInfo['gender'] = input('Какой у тебя пол? Женский/Мужской\n')
 userInfo['age'] = input('Сколько тебе лет?\n')
-userInfo['hobby'] = input('Какие у тебя хобби? Введи три наиболее значимых для тебя\n'), input(), input()
+userInfo['hobby'] = input(
+    'Какие у тебя хобби? Введи три наиболее значимых для тебя\n'), input(), input()
 userInfo['music'] = input(
     'Какая у тебя любимая музыка? '
     'Введи два наиболее интересных для тебя жанра/прилагательных\n'

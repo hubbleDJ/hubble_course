@@ -13,9 +13,9 @@ varInt: int = 52
 print(var_int)
 varTwoInt: int = varInt
 varThreeInt: int = 16/8
-print(var_int **2)
-print(var_int //3)
-print(var_int %3)
+print(var_int ** 2)
+print(var_int // 3)
+print(var_int % 3)
 var_int = var_int + 1
 var_int += 1
 print(var_int)
@@ -25,7 +25,7 @@ print(var_int)
 var_float: float = 89.7
 varFloat: float = -89.7
 print(int(var_float))
-print(float("15"))
+print(float('15'))
 
 # bool
 var_bool: bool = True
@@ -36,26 +36,26 @@ var_str: str = 'Hello, world!'
 varStr: str = '1'
 print('''"три" кавычки''')
 print("""'три кавычки' другие""")
-print("кавычки")
-print("5" + "a")
+print('кавычки')
+print('5' + 'a')
 
 x = 45
 y = 50
-print("x + y =" + str(x + y))
-print("x + y ={}".format(x + y))
-print(f"x + y ={x + y}")
-print("text"[0])
-print("text"[-2])
-print("text"[2:])
-print("text"[:3])
-print(len("text"))
+print('x + y =' + str(x + y))
+print('x + y ={}'.format(x + y))
+print(f'x + y ={x + y}')
+print('text'[0])
+print('text'[-2])
+print('text'[2:])
+print('text'[:3])
+print(len('text'))
 
 x: str = 'lol'
 y: int = 34567
 z: float = 567.7
 o: str = '45'
 hvsh: str = 'vlksjhvjk 67'
-hvsh: str = "vlksjhvjk 67"
+hvsh: str = 'vlksjhvjk 67'
 
 
 # list
@@ -85,4 +85,3 @@ var_dict: dict[str, str] = {
 }
 
 var_none = None
-

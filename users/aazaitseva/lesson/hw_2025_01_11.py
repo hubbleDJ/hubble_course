@@ -20,4 +20,3 @@ with sqlite3.connect('my_db.db') as conn:
     ''')
 
 
-    id_message = cursor.execute('''select user_id from messages limit 1''').fetchall()[0][0]

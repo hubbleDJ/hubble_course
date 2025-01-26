@@ -86,4 +86,3 @@ var_dict: dict[str, str] = {
 
 var_none = None
 
-print(type(var_set))

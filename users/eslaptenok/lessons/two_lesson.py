@@ -26,4 +26,3 @@ def func_sum(x: int | float, y: int) -> int:
 
     return x + y
 
-print(func_sum(5.2, 2))

@@ -9,4 +9,3 @@ def factorial(num: int) -> int:
     return factorial(num - 1) * num
 
 print(factorial(5))
-print(factorial(-2))

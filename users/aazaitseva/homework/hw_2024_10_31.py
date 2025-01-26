@@ -12,4 +12,3 @@ def bubble_sort(sorted_list: list[int]) -> list[int]:
     return sorted_list
 var_list = [5, 58, 458, 70, 9]
 sort_list = bubble_sort(var_list)
-print(sort_list)

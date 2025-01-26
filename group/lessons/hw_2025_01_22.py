@@ -106,4 +106,3 @@ print(f'Вы ввели {my_value}')
 print(print)
 
 t = [(1, 3), 78]
-print(t[0][0])

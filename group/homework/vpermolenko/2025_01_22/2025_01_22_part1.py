@@ -5,19 +5,19 @@ input1: str = input()
 input2: str = input()
 
 try:
-    varX: float = float(input1)
-    varY: float = float(input2)
+    x: float = float(input1)
+    y: float = float(input2)
     
-    print(f'''Сумма: {varX} + {varY} = {varX+varY}''')
-    print(f'''Разность: {varX} - {varY} = {varX-varY}''')
-    print(f'''Умножение: {varX} * {varY} = {varX*varY}''')
-    if(varY == 0):
-        print(f'''Деление: {varX} / {varY} = Бесконечность''')
-        print(f'''Остаток от деления: {varX} % {varY} = Бесконечность''')
-        print(f'''Деление без остатка: {varX} // {varY} = Бесконечность''')
+    print(f'''Сумма: {x} + {y} = {x + y}''')
+    print(f'''Разность: {x} - {y} = {x - y}''')
+    print(f'''Умножение: {x} * {y} = {x * y}''')
+    if y == 0:
+        print(f'''Деление: {x} / {y} = Бесконечность''')
+        print(f'''Остаток от деления: {x} % {y} = Бесконечность''')
+        print(f'''Деление без остатка: {x} // {y} = Бесконечность''')
     else:
-        print(f'''Деление: {varX} / {varY} = {varX/varY}''')
-        print(f'''Остаток от деления: {varX} % {varY} = {varX%varY}''')
-        print(f'''Деление без остатка: {varX} // {varY} = {varX//varY}''')
+        print(f'''Деление: {x} / {y} = {x / y}''')
+        print(f'''Остаток от деления: {x} % {y} = {x % y}''')
+        print(f'''Деление без остатка: {x} // {y} = {x // y}''')
 except ValueError:
     print("Вы не ввели числа")

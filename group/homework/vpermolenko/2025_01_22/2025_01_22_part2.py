@@ -1,7 +1,6 @@
 #homework2
 
-myPerson: dict = {
-}
+myPerson: dict = {}
 
 myPerson['name'] = input("Напиши как тебя зовут: ")
 myPerson['gender'] = input("Твой пол: ")

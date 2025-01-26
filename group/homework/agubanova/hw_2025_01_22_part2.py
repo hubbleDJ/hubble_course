@@ -20,4 +20,3 @@ print(
     f'''увлечения: {my_dict["hobby"]}, '''
     f'''город: {my_dict["city"]}'''
 )
-

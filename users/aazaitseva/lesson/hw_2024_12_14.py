@@ -25,11 +25,11 @@ async def cmd_start(message: Message, bot):
             chat_id=message.chat.id,
             photo='AgACAgIAAxkBAAMOZ12cIo2m1qwG8uMzb5YctHe57mIAAq_jMRsxN_BKuekc6zJy8bcBAAMCAAN4AAM2BA'
         )
-       
+
 # Запуск процесса поллинга новых апдейтов
 async def main():
     # await bot(DeleteWebhook(drop_pending_updates=True))  # отключаем обновления
     await dp.start_polling(bot, skip_updates=True)
-   
+
 if __name__ == "__main__":
     asyncio.run(main())

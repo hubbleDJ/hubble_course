@@ -31,3 +31,4 @@ def num_of_characters_line(line: str) -> dict[str, int]:
             symbol_dict[symbol] = 1
     return symbol_dict
 
+print(num_of_characters_line('python cool language'))

@@ -152,3 +152,4 @@ with sqlite3.connect('my_database.db') as connection:
     print(cursor.execute('''
         insert into texts (id, scenario_id, text)
         values(0, 0, 'Привет! Это тестовое сообщение')
+    '''))

@@ -28,3 +28,4 @@ for value in var_list:
     print(value)
 
 for symbol in "Hello":
+    print(symbol)

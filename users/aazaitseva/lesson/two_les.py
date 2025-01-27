@@ -5,7 +5,7 @@ elif 5 > 2:
 else:
     print("hello")
 
-var_list = [4, 985, 150]
+var_list = [4, 985, 150] 
 if 2 not in var_list:
     var_list.append(2)
 print(var_list)
@@ -14,7 +14,7 @@ if  len("") == 0:
     print(True)
 
 increment = 0
-while increment < 100:
+while increment < 100: 
     print(increment)
     increment = increment + 1
 

@@ -6,12 +6,12 @@ def new_sum(x: int, y: int) -> int:
 print(new_sum(1, 5))
 
 def count_letter(text: str) -> dict[str, int]:
-    res = {}   
+    res = {}    
     for letter in text:
         if letter in res:
             res[letter] += 1
         else:
-            res[letter] = 1         
+            res[letter] = 1          
     return res
 print(count_letter("jhyfy"))
 

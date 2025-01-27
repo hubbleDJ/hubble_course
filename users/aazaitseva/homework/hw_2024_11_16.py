@@ -1,4 +1,4 @@
-def factorial(n: int) -> int:
+def factorial(n: int) -> int: 
     """вычисляет факториал числа"""
 
     if n in [0, 1]:

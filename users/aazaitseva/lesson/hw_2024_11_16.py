@@ -25,7 +25,7 @@ var_list[5]
 print(var_list[5])
 inc = 0
 def num_in_list(num: int, serch_list: list[int]) -> bool:
-    global inc
+    global inc 
     inc += 1
     len_list = len(serch_list)
     if len_list == 0:
@@ -48,6 +48,6 @@ print(num_in_list(81101, var_list))
 print(inc)
 
 
-   
-   
+    
+    
     

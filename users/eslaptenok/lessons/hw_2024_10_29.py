@@ -8,26 +8,26 @@ import json
 
 class Car:
     """
-   
+    
     """
-   
+    
     def __init__(self, marka: str, model: str):
         self.__marka = marka
         self.__model = model
-   
+    
     def get_marka(self) -> str:
         return self.__marka
-   
+    
     def get_model(self) -> str:
         return self.__model
-   
+    
     def set_model(self, new_model) -> None:
         self.__model = new_model
-   
+    
     def my_sum(self, x, y):
         return x + y
-   
-       
+    
+        
 one_car = Car('Lada', 'Vesta')
 print(one_car.get_marka())
 
@@ -37,22 +37,22 @@ print(one_car.get_model())
 
 class RedCar:
     COLORS = (1, 255)
-   
+    
     @classmethod
     def proverca_red(cls, red_int: int) -> bool:
         """"""
-       
+        
         return cls.COLORS[0] <= red_int <= cls.COLORS[1]
-   
+    
     @private
     @staticmethod
     def my_sum(x: int, y: int) -> int:
         return x + y
-   
+    
     def __init__(self, color_rbg: tuple[int, int, int]):
         if not self.proverca_red(color_rbg[0]):
             raise Exception('Машина не красная')
-   
+    
 
 my_car = RedCar((255, 0, 0))
 
@@ -92,7 +92,7 @@ chet_list = []
 for i in range(1, 101):
     if i % 2 == 0:
         chet_list.append(i)
-       
+        
 chet_list = [i for i in range(101) if i % 2 == 0]
 primer_dict = {str(i): i for i in range(100)}
 
@@ -125,7 +125,7 @@ dp = Dispatcher()
 
 @dp.message()
 async def cmd_start(message: types.Message):
-   
+    
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
     markup.add(types.KeyboardButton('LOL'))
     await message.answer(f"Hello, {message.chat.username}!", reply_markup=markup)
@@ -136,8 +136,8 @@ async def main():
 
 # if __name__ == "__main__":
     # asyncio.run(main())
-   
-   
+    
+    
 import sqlite3
 with sqlite3.connect('my_database.db') as connection:
     cursor = connection.cursor()
@@ -148,7 +148,7 @@ with sqlite3.connect('my_database.db') as connection:
             text String
         )
     '''))
-   
+    
     print(cursor.execute('''
         insert into texts (id, scenario_id, text)
         values(0, 0, 'Привет! Это тестовое сообщение')

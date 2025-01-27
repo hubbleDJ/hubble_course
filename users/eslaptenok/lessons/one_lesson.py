@@ -5,7 +5,7 @@ var_int: int = 1
 var_float: float = 0.0
 
 var_str: str = 'Maks'
-var_str: str = 'Maks'
+var_str: str = "Maks"
 var_str: str = '''Maks'''
 var_str: str = """Maks"""
 

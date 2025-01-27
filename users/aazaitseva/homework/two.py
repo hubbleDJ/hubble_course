@@ -7,13 +7,13 @@
 #   'а': 2,
 #   'м': 1,
 #   '!': 1
-# }
+#}
 
-text = 'unbelievable'
+text = "unbelievable"
 res = {}
 for letter in text:
     if letter in res:
-        res[letter] += 1
+       res[letter] += 1
     else:
-        res[letter] = 1
+       res[letter] = 1
 print(res)

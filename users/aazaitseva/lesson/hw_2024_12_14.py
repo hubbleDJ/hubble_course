@@ -1,19 +1,19 @@
 # import datetime
 # from datetime import datetime
-from aiogram.methods import DeleteWebhook
-import asyncio
-from aiogram.types import Message
-from aiogram import Bot, Dispatcher
 from datetime import datetime as dt
 
 import pandas as pd
 
 print(dt.now())
 
+from aiogram import Bot, Dispatcher
+from aiogram.types import Message
+import asyncio
+from aiogram.methods import DeleteWebhook
+
 
 bot = Bot('7695535894:AAHJN0trkCMy2adp-du1jKeIO08ar-7oqmE')
 dp = Dispatcher()
-
 
 @dp.message()
 async def cmd_start(message: Message, bot):
@@ -27,10 +27,8 @@ async def cmd_start(message: Message, bot):
         )
 
 # Запуск процесса поллинга новых апдейтов
-
-
 async def main():
     # await bot(DeleteWebhook(drop_pending_updates=True))  # отключаем обновления
     await dp.start_polling(bot, skip_updates=True)
 
-if __name__ == '__main__':
+if __name__ == "__main__":

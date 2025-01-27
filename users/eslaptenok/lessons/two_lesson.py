@@ -22,6 +22,7 @@
 #         print(num)
 
 def func_sum(x: int | float, y: int) -> int:
-    """Суммирует X и Y."""
+    """Суммирует X и Y"""
 
     return x + y
+

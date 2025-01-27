@@ -3,14 +3,8 @@
 # Полиморфизм
 # Наследование
 
-import sqlite3
-from aiogram.filters.command import Command
-from aiogram import Bot, Dispatcher, types
-import logging
-import asyncio
 from accessify import private, protected
 import json
-
 
 class Car:
     """
@@ -84,8 +78,10 @@ except Exception as error:
         'name': 'Visa',
         'num': '*123184'
     },
-    ...,
-    {}, ]
+    ...
+    ,
+    {}
+, ]
 print('End')
 
 
@@ -103,10 +99,8 @@ primer_dict = {str(i): i for i in range(100)}
 print(chet_list)
 print(primer_dict)
 
-
 def my_func(lol: str, *args, **kwargs):
     print(lol, args, kwargs)
-
 
 print(my_func('123', 132, '', o=12, iu='23'))
 print(my_func(lol='12'))
@@ -114,6 +108,11 @@ print(my_func(lol='12'))
 with open('/Users/mvstrometskiy/home_programs/hubble_course/users/eslaptenok/lessons/2024_10_29.json', 'r') as f:
     print(json.load(f))
 
+
+import asyncio
+import logging
+from aiogram import Bot, Dispatcher, types
+from aiogram.filters.command import Command
 
 # Включаем логирование, чтобы не пропустить важные сообщения
 logging.basicConfig(level=logging.INFO)
@@ -124,7 +123,6 @@ bot = Bot(token="8068611166:AAGBGSSa7Pyi4rMnGOLq6ZJISf-waYeu5QI")
 # Диспетчер
 dp = Dispatcher()
 
-
 @dp.message()
 async def cmd_start(message: types.Message):
 
@@ -133,8 +131,6 @@ async def cmd_start(message: types.Message):
     await message.answer(f"Hello, {message.chat.username}!", reply_markup=markup)
 
 # Запуск процесса поллинга новых апдейтов
-
-
 async def main():
     await dp.start_polling(bot)
 
@@ -142,6 +138,7 @@ async def main():
     # asyncio.run(main())
 
 
+import sqlite3
 with sqlite3.connect('my_database.db') as connection:
     cursor = connection.cursor()
     print(cursor.execute('''

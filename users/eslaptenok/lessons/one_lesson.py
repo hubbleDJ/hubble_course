@@ -51,7 +51,7 @@ print('''
 
 if 'var_int':
     print('olo')
-
+   
 print(bool(''))
 
 numbers: list[int] = [112, 354, 64, 0]
@@ -81,7 +81,7 @@ print(numbers_set)
 print(set([1, 2, 3, 4]) & set([1, 4, 7]))
 for number in numbers_set:
     print(number)
-
+   
 print()
 people: dict = {
     'id': 0,

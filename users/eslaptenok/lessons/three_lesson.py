@@ -12,12 +12,12 @@ print(factorial(5))
 
 def search_number(search_list: list[int], num: int) -> int:
     """ """
-
+   
     if len(search_list) == 1 and num == search_list[0]:
         return num
     elif len(search_list) == 1 and num != search_list[0]:
         return None
-
+   
     half_list: int = int(len(search_list)/2)
     left_list: list[int] = search_list[:half_list] # 1, 2
     right_list: list[int] = search_list[half_list:] # 4, 5

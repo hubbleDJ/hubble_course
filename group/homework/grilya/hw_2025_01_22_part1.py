@@ -1,9 +1,9 @@
 
 print('''Пользователь ебет в рот этот синтаксиз и с пятой подсказки вспоминает про ебучие кавычки, введите цифры и нажмите энтер''')
-biba = input()
-boba = input()
-x: int|float = float(biba)
-y: int|float = float(boba)
+biba: float = input()
+boba: float = input()
+x: float = float(biba)
+y: float = float(boba)
 print(f'''{x} + {y} = {x + y}''')
 print(f'''{x} - {y} = {x - y}''')
 print(f'''{x} * {y} = {x * y}''')

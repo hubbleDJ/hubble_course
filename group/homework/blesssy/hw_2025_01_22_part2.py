@@ -1,12 +1,13 @@
 # 2. Создать dict со своими параметрами name, surname, hobby, age и все, что придумаете
-DictUser: dict = {
-    'name': input ("Please enter your name: "),                #'Olessya',
-    'surname': input ("Please enter your surname: "),          #'Bogdanova',
-    'age': input ("Please enter your age: "),                  #19,
-    'gender': input ("Please choose your gender (M/F): "),     #'W',
-    'hobby': input ("Please enter at least two of your hobbies (using commas): ").split(', '),
-                                                               #Liguistics, Languages, IT
+
+dictUser: dict = {
+    'name': input("Please enter your name: "),                
+    'surname': input("Please enter your surname: "),         
+    'age': input("Please enter your age: "),                  
+    'gender': input("Please choose your gender (male/female): "),     
+    'hobbies': input("Please enter at least two of your hobbies (using commas): ").split(', '),
+
 }
 
-print(f'Hi {DictUser['name']} {DictUser['surname']}, you are {DictUser['age']} y.o.')
-print(f'Your sex is {DictUser['gender']} and your hobbies are {DictUser['hobby']}')
+print(f"Hi {dictUser['name']} {dictUser['surname']}, you are {dictUser['age']} y.o.'")
+print(f"Your sex is {dictUser['gender']} and your hobbies are {', '.join(dictUser['hobbies'])}")

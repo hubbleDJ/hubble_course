@@ -1,0 +1,10 @@
+# 1. Написать скрипт, который принимает в консоль 2 параметра(переменные)
+num1: float = float(input('Введите первое число: '))
+num2: float = float(input('Введите второе число: '))
+
+print(f'Сумма: {num1} + {num2} = {num1 + num2}')
+print(f'Разность: {num1} - {num2} = {num1 - num2}')
+print(f'Умножение: {num1} * {num2} = {num1 * num2}')
+print(f'Деление: {num1} / {num2} = {num1 / num2}')
+print(f'Остаток от деления: {num1} % {num2} = {num1 % num2}')
+print(f'Целая часть от деления: {num1} // {num2} = {num1 // num2}')

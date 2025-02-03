@@ -1,19 +1,14 @@
-number1 = int(input('Введите число 1: '))
-number2 = int(input('Введите число 2: '))
-znak = ['+', '-', '*', '/', '%', '//']
-
-for op in znak:
-    if op == '+':
-        result = number1 + number2
-    elif op == '-':
-        result = number1 - number2
-    elif op == '*':
-        result = number1 * number2
-    elif op == '/':
-        result = "Ошибка: деление на ноль" if number2 == 0 else number1 / number2
-    elif op == '%':
-        result = "Ошибка: деление на ноль" if number2 == 0 else number1 % number2
-    elif op == '//':
-        result = "Ошибка: деление на ноль" if number2 == 0 else number1 // number2
-    
-    print(f'{number1} {op} {number2} = {result}')
+num1 = float(input("Введите первое число: "))
+num2 = float(input("Введите второе число: "))
+sum_result = num1 + num2
+diff_result = num1 - num2
+mul_result = num1 * num2
+div_result = num1 / num2
+mod_result = num1 % num2
+floor_div_result = num1 // num2
+print(f"{num1} + {num2} = {sum_result}")
+print(f"{num1} - {num2} = {diff_result}")
+print(f"{num1} * {num2} = {mul_result}")
+print(f"{num1} / {num2} = {div_result}")
+print(f"{num1} % {num2} = {mod_result}")
+print(f"{num1} // {num2} = {floor_div_result}")

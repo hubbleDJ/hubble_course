@@ -1,1 +1,2 @@
-print('привет мир')      
+if __name__ == "__main__":
+    print("hello world")

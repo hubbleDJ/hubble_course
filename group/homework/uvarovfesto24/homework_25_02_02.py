@@ -1,5 +1,5 @@
 popList: list = [2, 4, 5, 4, 7, 2, 8, 4, 9, 2]
-popLeight: int = (len(popList))
+popLeight: int = len(popList)
 print("sort start= ", popList)
 
 for i in range(popLeight):

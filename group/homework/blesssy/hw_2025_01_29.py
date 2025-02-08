@@ -14,7 +14,7 @@ def bubble_sort(nums: list[int]) -> list[int]:
     return nums
 
 list1: list[int] = [-500, -501, 5, 12, 32, 0, -4, 4, 56564, -432]
-bubble_sort(list1)
+sorted_list = bubble_sort(list1[:])
 
-print("Отсортированный список 1: ", list1)
+print("Отсортированный список 1: ", sorted_list)
 print("Отсортированный список 1: ", bubble_sort([-1, -5]))

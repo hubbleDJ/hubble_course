@@ -4,8 +4,7 @@
 number: int = int(input("Введите число: "))
 
 def find_factorial(number: int|float) -> int|float:
-    """Ищет факториал,  
-    в случае ошибки - вернет - 1"""
+    """Ищет факториал, в случае ошибки - вернет - 1"""
 
     if number < 1 or int(number) != number:
         return -1

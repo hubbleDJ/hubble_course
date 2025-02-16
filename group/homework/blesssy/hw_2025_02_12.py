@@ -2,7 +2,7 @@
 # Необязательно: написать любую сортировку,
 # в которой есть рекурсия(быстрая, сортировка делением)
 
-def factorial(num, current_factor=1):
+def factorial(num, current_factor = 1):
     """factorial calculation"""
     if current_factor > num:
         return 1

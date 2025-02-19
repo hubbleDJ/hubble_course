@@ -1,7 +1,7 @@
 # Нписать любую сортировку,
 # в которой есть рекурсия(быстрая, сортировка делением)
 
-def merge_sort(my_array: list[float|int]) -> float|int:
+def merge_sort(my_array: list[float|int]) -> list[float|int]:
     """sorting nums in ascending order by merging"""
     
     if len(my_array) <= 1:
@@ -18,7 +18,7 @@ def merge_sort(my_array: list[float|int]) -> float|int:
     
     return merge(left, right)
 
-def merge (left: list[float|int], right: list[float|int]) -> float|int:
+def merge (left: list[float|int], right: list[float|int]) -> list[float|int]:
     """merging 2 arrays into one"""
     
     sorted_array = []

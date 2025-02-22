@@ -7,8 +7,11 @@ def merge_sort(my_array: list[float|int]) -> list[float|int]:
     if len(my_array) <= 1:
         #if the length of an array is 1, it's already sorted
         return my_array
-    
-    middle = len(my_array) // 2
+
+    if len(my_array) % 2 == 0:
+        middle = len(my_array) // 2
+    else:
+        middle = len(my_array) // 2 + 1
         #dividing an array into 2 parts: left and right
     left = my_array[:middle]
     right = my_array[middle:]
@@ -38,6 +41,6 @@ def merge (left: list[float|int], right: list[float|int]) -> list[float|int]:
     
     return sorted_array
 
-my_array = [423, -3209, 22.71, -1453, -320, -13.34, 1225, -497, -2251, 1769]
+my_array = [423, -3209, 22.71,1265, -1453, -320, -13.34, 1225, -497, -2251, 1769]
 sorted_array = merge_sort(my_array)
 print(sorted_array)

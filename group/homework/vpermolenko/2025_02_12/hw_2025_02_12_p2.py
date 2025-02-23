@@ -9,12 +9,13 @@ def quick_sort(list_to_sort: list[int | float]) -> list[int | float]:
     """
         Быстрая сортировка, возвращает новый отсортированный массив
     """
+
     sorted_list: list[int | float] = []
     less_list: list[int | float] = []
     greater_equal_list: list[int | float] = []
 
     if len(list_to_sort) <= 1:
-        return list[int | float](list_to_sort)
+        return list(list_to_sort)
     for index in range(len(list_to_sort) - 1):
         if list_to_sort[index] < list_to_sort[len(list_to_sort) - 1]:
             less_list.append(list_to_sort[index])

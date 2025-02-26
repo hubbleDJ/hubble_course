@@ -1,6 +1,6 @@
 """Module homework 2025-02-12 Recursive function factorial"""
 
-def factorial_recursive(n: int|float) -> int:
+def factorial_recursive(n: int|float) -> int|float:
     """
        Вычисляет факториал переданного числа
        в случае ошибки возвращает -1 
@@ -8,13 +8,12 @@ def factorial_recursive(n: int|float) -> int:
 
     result = -1
     try:
-        if n.is_integer() and n >= 0:
-            n = int(n)
+        if isinstance(n, (float, int)) and n >= 0 and n == int(n):
             if n in (0, 1):
                 return 1
             return n * factorial_recursive(n - 1)
-    except AttributeError:
-        pass
+    except Exception as error:
+        print(error)
 
     return result
 

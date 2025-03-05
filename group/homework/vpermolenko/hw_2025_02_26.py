@@ -34,8 +34,8 @@ class Teammate(User):
             nickname,
             age
         )
-        self.tasks: set[str] = set([])
-
+        self.tasks: set[str] = set()
+        
     def complete_task(self, task_name: str) -> None:
         """сообщение о завершении задачи"""
 

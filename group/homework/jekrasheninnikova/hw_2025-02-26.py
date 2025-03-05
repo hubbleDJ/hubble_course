@@ -7,8 +7,17 @@
 from time import sleep
 
 class Doll:
-    def __init__(self, id:str, name:None, year_of_production:int, mark:str, hair:str, eyes:str, color_dress:str, cost:int) -> None:
-        """Инициализация переменной"""
+    """"""
+    
+    def __init__(self, id: str,
+                year_of_production: int,
+                mark: str, hair: str,
+                eyes: str,
+                color_dress: str,
+                cost: int,
+                name: str=None
+            ) -> None:
+        """"""
 
         self.id = id
         if name != None:
@@ -73,8 +82,7 @@ class Barbie(Doll):
             color_dress = color_dress, 
             cost = cost)
         
-        if accessory != None:
-            self.accessory = accessory
+        self.accessory = accessory if accessory else None
         
         
     def brush_hair(self):

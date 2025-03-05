@@ -1,4 +1,5 @@
 """Home work 2025_02_26"""
+
 # Создать любой класс с минимум тремя свойствами и тремя методами
 # Создать новый класс на основе предыдущего
 # Добавить в новый класс несколько новых методов и свойств
@@ -7,7 +8,7 @@
 # Зарегистрировать бота в @BotFather в телеграм
 
 from uuid import uuid1
-from time import time  
+from time import time
 
 class Sessions:
     """Здесь записываются данные сессии"""
@@ -18,7 +19,7 @@ class Sessions:
         bots_phrases: list[str],
         intents: list[str],
         accuracy: list[float]
-    ) -> None: 
+    ) -> None:
         
         self.clients_phrases = clients_phrases
         self.bots_phrases = bots_phrases
@@ -31,7 +32,7 @@ class Sessions:
         if hasattr(self, 'id'):
             pass
         else:
-            self.id = str(uuid1()) 
+            self.id = str(uuid1())
             self.time = str(time())
     
     def add_new_phrase(
@@ -86,7 +87,8 @@ class AdvancedSession(Sessions):
         self.clients_id = clients_id
 
     def get_statistic(self) -> dict:
-        """возвращает сколько было интентов и какие, а также среднюю точность по боту"""
+        """Возвращает сколько было интентов и какие, а также среднюю точность по боту"""
+        
         return {
             "Сколько интентов было: ": len(self.intents),
             "Какие интенты: ": self.intents,
